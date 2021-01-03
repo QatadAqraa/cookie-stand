@@ -1,7 +1,14 @@
 body{
     background-color: rgb(102, 97, 97);
 }
-
+h1{
+    color: darkblue;
+    background-color: skyblue;
+    font-size: xx-large;
+    text-align: center;
+    border: blue 5px solid; 
+    margin: 20px;
+} 
 img{  
     display: block;  
     margin-left: auto;  
@@ -18,6 +25,15 @@ p{
     padding: 10px;
 }
 
+a{
+    color: darkblue;
+    background-color: lightskyblue;
+    font-size: x-large;
+    border: blue 5px; 
+    border-style: outset;
+    margin: 20px;
+    padding: 10px;
+}
 ul{
     background-color: rgb(8, 66, 8);
     color: greenyellow;
