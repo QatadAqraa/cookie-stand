@@ -1,0 +1,28 @@
+body{
+    background-color: rgb(102, 97, 97);
+}
+
+img{  
+    display: block;  
+    margin-left: auto;  
+    margin-right: auto;  
+    border: 8px ridge blue;  
+}
+  
+p{
+    background-color: rgb(8, 66, 8);
+    color: greenyellow;
+    text-align: center;
+    border: lightseagreen 5px solid; 
+    margin: 20px;
+    padding: 10px;
+}
+
+ul{
+    background-color: rgb(8, 66, 8);
+    color: greenyellow;
+    border: lightseagreen 5px; 
+    border-style: outset;
+    margin: 20px;
+    padding: 30px;
+}
