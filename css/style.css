@@ -12,8 +12,7 @@ h1{
 img{  
     display: block;  
     margin-left: auto;  
-    margin-right: auto;  
-    border: 8px ridge blue;  
+    margin-right: auto;   
 }
   
 p{
@@ -25,14 +24,20 @@ p{
     padding: 10px;
 }
 
-a{
+nav li{
+    display: inline;
+    margin-right: 20px;
+    margin-left: 20px;
     color: darkblue;
-    background-color: lightskyblue;
     font-size: x-large;
-    border: blue 5px; 
-    border-style: outset;
-    margin: 20px;
+}
+
+nav{
+    background-color: lightskyblue;
     padding: 10px;
+}
+body, li {
+    margin: 0px;
 }
 ul{
     background-color: rgb(8, 66, 8);
