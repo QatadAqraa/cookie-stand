@@ -61,7 +61,7 @@ City.prototype.renderBody = function () {
         tableSecondRow.appendChild(dataCellOne);
     }
     
-    for (var index = 0; index < hoursArry.length; index++) {
+    for (var index = 0; index < hoursArry.length+1; index++) {
         var dataCellTwo = document.createElement('td');
         dataCellTwo.textContent = this.avgCookiePerHourlyArry[index];
         tableSecondRow.appendChild(dataCellTwo);

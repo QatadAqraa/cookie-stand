@@ -9,7 +9,7 @@ h1{
     border: blue 5px solid; 
     margin: 20px;
 } 
-img{  
+main img{  
     display: block;  
     margin-left: auto;  
     margin-right: auto;   
@@ -33,8 +33,8 @@ nav li{
 }
 
 nav{
-    background-color: lightskyblue;
-    padding: 10px;
+    background-color: black;
+    padding: 20px;
 }
 body, li {
     margin: 0px;
@@ -52,5 +52,26 @@ table, td, tr  {
     border-collapse: collapse;
     padding: 25px;
     margin: 20px;
-
+}
+a{
+    color:rgb(105, 105, 105);
+    font-size: x-large;
+    text-decoration: none;
+} 
+a:hover {
+    background-color: white;
+    padding: 19px;
+}
+footer{
+    width: 100%;
+}
+footer section div{
+        background-color: black;
+        padding-top: 0px;
+        padding-bottom: 0px;
+        width: 100%;
+}
+footer img{
+    height: 275px;
+    width: 33.1%;
 }
