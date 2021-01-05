@@ -1,7 +1,7 @@
 'use strict';
 
 var hoursArry = ['6:00am', '7:00am', '8:00am', '9:00am', '10:00am',
- '11:00am', '12:00pm', '1:00pm', '2:00pm', '3:00pm', '4:00pm', '5:00pm', '6:00pm', '7:00pm', 'Daily Location Total'];
+ '11:00am', '12:00pm', '1:00pm', '2:00pm', '3:00pm', '4:00pm', '5:00pm', '6:00pm', '7:00pm'];
 
 function City(
     name, minCustomerHourly, maxCustomerHourly, avgCookiePerCustomer) {
@@ -26,7 +26,7 @@ City.prototype.calcAvgCookiePerHourly = function () {
 }
 
 var parentElement = document.getElementById("salmoncookies");
- 
+
 var table = document.createElement('table');
 parentElement.appendChild(table);
 
@@ -44,10 +44,13 @@ City.prototype.renderHeader = function () {
         headerTwo.textContent = hoursArry[index];
         tableFirstRow.appendChild(headerTwo);
     }
+
+    var headerThree = document.createElement('th');
+    headerThree.textContent = 'Daily Location Total';
+    tableFirstRow.appendChild(headerThree);
 }
 
 City.prototype.renderBody = function () {
-
 
     var tableSecondRow = document.createElement('tr');
     table.appendChild(tableSecondRow);
@@ -57,7 +60,7 @@ City.prototype.renderBody = function () {
         dataCellOne.textContent = this.name;
         tableSecondRow.appendChild(dataCellOne);
     }
-
+    
     for (var index = 0; index < hoursArry.length; index++) {
         var dataCellTwo = document.createElement('td');
         dataCellTwo.textContent = this.avgCookiePerHourlyArry[index];
