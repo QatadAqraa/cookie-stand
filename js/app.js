@@ -31,9 +31,6 @@ City.prototype.claCtotal = function(){
         this.total = this.total + this.avgCookiePerHourlyArry[index];         
     }
 }
-City.prototype.calcTotalofTotal= function(){
-
-}
 
 var parentElement = document.getElementById("salmoncookies");
 
