@@ -75,3 +75,10 @@ footer img{
     height: 275px;
     width: 33.1%;
 }
+fieldset{
+    text-align: center;
+    border : solid;
+    margin: 50px;
+
+}
+

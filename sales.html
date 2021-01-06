@@ -19,6 +19,29 @@
   </header>
   <main>
     <img src="img/salmon.png" alt="logo picture">
+    <fieldset>
+      <form action="SalmonCookiesForm">
+        <label for="cityName">
+          City :
+        </label>
+        <input name="name" id="cityName" type="text" required>
+        <label for="minCusHr">
+          Minmum Customer Hourly :
+        </label>
+        <input name="minCustomerHourly" id="minCusHr" type="number" required>
+        <br>
+        <label for="maxCusHr">
+          Maxmim Customer Hourly :
+        </label>
+        <input name="maxCustomerHourly" id="maxCusHr" type="number" required>
+        <label for="avgCookiePerCus">
+          Avrage Cookie Per Customer
+        </label>
+        <input name="avgCookiePerCustomer" id="avgCookiePerCus" type="number" required>
+        <br>
+        <input type="submit" value="Add Data">
+      </form>
+    </fieldset>
     <div id="salmoncookies">
       <!-- generate this from js: -->
       <!-- <article>
