@@ -137,3 +137,22 @@ Paris.renderBody();
 Lima.renderBody();
 
 renderTotal();
+
+var SalmonCookiesForm = document.getElementById('SalmonCookiesForm');
+
+SalmonCookiesForm.addEventListener('submit', function (event){
+
+    event.preventDefault();
+
+    var cityName = event.target.name.value;
+    var minCusHr = event.target.minCustomerHourly.value;
+    var maxCusHr = event.target.maxCustomerHourly.value;
+    var avgCookiePerCus = event.target.avgCookiePerCustomer.value;
+
+    var newCity = new City(cityName, minCusHr, maxCusHr, avgCookiePerCus)
+    newCity.calcAvgCookiePerHourly();
+    newCity.claCtotal();
+    newCity.renderBody();
+    console.log(newCity);
+});
+
