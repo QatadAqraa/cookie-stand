@@ -3,7 +3,7 @@
 var hoursArry = ['6:00am', '7:00am', '8:00am', '9:00am', '10:00am',
  '11:00am', '12:00pm', '1:00pm', '2:00pm', '3:00pm', '4:00pm', '5:00pm', '6:00pm', '7:00pm'];
 
- var locationArr = []
+var locationArr = []
 
 function City(name, minCustomerHourly, maxCustomerHourly, avgCookiePerCustomer) {
     this.name = name;
@@ -33,6 +33,7 @@ City.prototype.claCtotal = function(){
 }
 
 var parentElement = document.getElementById("salmoncookies");
+var form = document.getElementById('SalmonCookiesForm');
 
 var table = document.createElement('table');
 parentElement.appendChild(table);
@@ -138,21 +139,36 @@ Lima.renderBody();
 
 renderTotal();
 
-var SalmonCookiesForm = document.getElementById('SalmonCookiesForm');
-debugger
-SalmonCookiesForm.addEventListener('submit', function (event){
+// var SalmonCookiesForm = document.getElementById('SalmonCookiesForm');
+// debugger
+// SalmonCookiesForm.addEventListener('submit', function (event){
 
+//     event.preventDefault();
+
+//     var cityName = event.target.name.value;
+//     var minCusHr = parseInt(event.target.minCustomerHourly.value);
+//     var maxCusHr = parseInt(event.target.maxCustomerHourly.value);
+//     var avgCookiePerCus = parseFloat(event.target.avgCookiePerCustomer.value);
+
+//     var newCity = new City(cityName, minCusHr, maxCusHr, avgCookiePerCus);
+//     newCity.calcAvgCookiePerHourly();
+//     newCity.claCtotal();
+//     newCity.renderBody();
+//     console.log(newCity);
+// });
+
+function addCity(event) {
     event.preventDefault();
-
     var cityName = event.target.name.value;
     var minCusHr = parseInt(event.target.minCustomerHourly.value);
     var maxCusHr = parseInt(event.target.maxCustomerHourly.value);
     var avgCookiePerCus = parseFloat(event.target.avgCookiePerCustomer.value);
 
-    var newCity = new City(cityName, minCusHr, maxCusHr, avgCookiePerCus);
+    var newCity = new City(cityName, minCusHr , maxCusHr, avgCookiePerCus);
     newCity.calcAvgCookiePerHourly();
     newCity.claCtotal();
     newCity.renderBody();
-    console.log(newCity);
-});
+   
+}
 
+form.addEventListener('submit', addCity);
