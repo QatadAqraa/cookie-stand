@@ -139,17 +139,17 @@ Lima.renderBody();
 renderTotal();
 
 var SalmonCookiesForm = document.getElementById('SalmonCookiesForm');
-
+debugger
 SalmonCookiesForm.addEventListener('submit', function (event){
 
     event.preventDefault();
 
     var cityName = event.target.name.value;
-    var minCusHr = event.target.minCustomerHourly.value;
-    var maxCusHr = event.target.maxCustomerHourly.value;
-    var avgCookiePerCus = event.target.avgCookiePerCustomer.value;
+    var minCusHr = parseInt(event.target.minCustomerHourly.value);
+    var maxCusHr = parseInt(event.target.maxCustomerHourly.value);
+    var avgCookiePerCus = parseFloat(event.target.avgCookiePerCustomer.value);
 
-    var newCity = new City(cityName, minCusHr, maxCusHr, avgCookiePerCus)
+    var newCity = new City(cityName, minCusHr, maxCusHr, avgCookiePerCus);
     newCity.calcAvgCookiePerHourly();
     newCity.claCtotal();
     newCity.renderBody();
