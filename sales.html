@@ -19,32 +19,32 @@
   </header>
   <main>
     <img src="img/salmon.png" alt="logo picture">
-    <fieldset>
-      <form action="SalmonCookiesForm">
-        <label for="cityName">
-          City :
+    <form id="SalmonCookiesForm">
+      <fieldset>
+        <legend>Add a new City</legend>
+        <label for="">
+          City
         </label>
-        <input name="name" id="cityName" type="text" required>
-        <label for="minCusHr">
-          Minmum Customer Hourly :
+        <input name="name" type="text" required>
+        <label for="">
+          Minmum Customer Hourly
         </label>
-        <input name="minCustomerHourly" id="minCusHr" type="number" required>
-        <br>
-        <label for="maxCusHr">
-          Maxmim Customer Hourly :
+        <input name="minCustomerHourly" type="number" required>
+        <label for="">
+          Maxmim Customer Hourly
         </label>
-        <input name="maxCustomerHourly" id="maxCusHr" type="number" required>
-        <label for="avgCookiePerCus">
+        <input name="maxCustomerHourly" type="number" required>
+        <label for="">
           Avrage Cookie Per Customer
         </label>
-        <input name="avgCookiePerCustomer" id="avgCookiePerCus" type="number" step="any" required>
-        <br>
-        <input type="submit" value="Add Data">
-      </form>
-    </fieldset>
-    <div id="salmoncookies">
-      <!-- generate this from js: -->
-      <!-- <article>
+        <input name="avgCookiePerCustomer" type="number" required>
+
+        <input type="submit" value="Add City">
+
+      </fieldset>
+      <div id="salmoncookies">
+        <!-- generate this from js: -->
+        <!-- <article>
                 <img>
               <h2></h2>
               <p></p>
@@ -52,7 +52,7 @@
                 <li></li>
               </ul>
             </article> -->
-      <!-- <img src="img/salmon.png" alt="" srcset=""> -->
+        <!-- <img src="img/salmon.png" alt="" srcset=""> -->
   </main>
   <footer>
     <section>
