@@ -102,7 +102,6 @@ function renderTotal(){
     var totalDataCell = document.createElement('td');
     totalDataCell.textContent = finalTotal;
     tableFinalRow.appendChild(totalDataCell);
-    // console.log(locationArr)
 }
 
 
@@ -137,6 +136,8 @@ Dubai.renderBody();
 Paris.renderBody();
 Lima.renderBody();
 
+renderTotal(); 
+
 // var SalmonCookiesForm = document.getElementById('SalmonCookiesForm');
 // debugger
 // SalmonCookiesForm.addEventListener('submit', function (event){
@@ -167,6 +168,17 @@ function addCity(event) {
     newCity.claCtotal();
     newCity.renderBody();
     renderTotal();
+
 }
+
 form.addEventListener('submit', addCity);
+
+
+
+
+
+
+
+
+
 

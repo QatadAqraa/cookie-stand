@@ -1,14 +1,33 @@
 body{
     background-color: rgb(102, 97, 97);
 }
+
 h1{
     color: darkblue;
     background-color: skyblue;
-    font-size: xx-large;
     text-align: center;
     border: blue 5px solid; 
     margin: 20px;
 } 
+h1, h2, h3 {
+    font-family: 'Yeon Sung', cursive;
+    font-size: 48px;
+    text-shadow: 1px 1px 1px #aaa;
+}
+p {
+    font-family: 'Tangerine', serif;
+    font-size: 48px;
+    text-shadow: 1px 1px 1px #aaa;
+    color: brown;
+}
+
+ul li {
+    font-family: 'Asul', sans-serif;
+    font-size: 28px;
+    text-shadow: 1px 1px 1px #aaa;
+    color: black;
+}
+
 main img{  
     display: block;  
     margin-left: auto;  
@@ -18,7 +37,6 @@ main img{
   
 p{
     background-color: rgb(8, 66, 8);
-    color: greenyellow;
     text-align: center;
     border: lightseagreen 5px solid; 
     margin: 20px;
@@ -47,6 +65,7 @@ ul{
     border-style: outset;
     margin: 20px;
     padding: 30px;
+    margin-bottom: 100px;
 }
 table, td, tr  {
     border: 2px solid black;
@@ -56,11 +75,11 @@ table, td, tr  {
     margin-bottom: 50px;
 }
 a{
-    color:rgb(105, 105, 105);
-    font-size: x-large;
     text-decoration: none;
 } 
-a:hover {
+nav a:hover {
+    color:rgb(105, 105, 105);
+    font-size: x-large;
     background-color: white;
     padding: 19px;
 }
